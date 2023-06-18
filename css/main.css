@@ -1,0 +1,272 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* For Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+  body {
+    background-color: #EFEFEF;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3F5278;
+    font-size: 20px;
+    margin: 20px 50px;
+  }
+
+  header {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: 55px;
+    gap: 0 75px;
+    margin-top: 45px;
+  }
+
+  #crystals {
+    grid-area: 1/1/2/2;
+    display: flex;
+    gap: 40px;
+  }
+
+  #crystals h1 {
+    display: flex;
+    background-color: #3F5278;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFF;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .currency {
+    grid-area: 1/2/2/3;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    background-color: #FFF;
+    border-radius: 10px;
+  }
+
+  .currency input {
+    color: #3F5278;
+    font-size: 20px;
+    font-weight: 600;
+    width: 80%;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-align: center;
+  }
+
+  input::placeholder {
+    font-weight: 400;
+  }
+
+  .currency img {
+    width: 37px;
+    padding-right: 10px;
+  }
+
+  #currency-conversion {
+    grid-area: 1/2/2/3;
+  }
+
+  #currency-conversion h1 {
+    background-color: #3F5278;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #FFF;
+    margin: 0;
+    padding: 16px 85px;
+  }
+
+  #conversion {
+    display: flex;
+    gap: 39px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+  }
+
+  .tier-selection {
+    grid-area: 2/1/3/2;
+    display: flex;
+    list-style-type: none;
+    background-color: #FFF;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  .tier-selection a {
+    display: inline-block;
+    text-decoration: none;
+    color: #3F5278;
+    padding: 18px 73px;
+  }
+
+  .tier-selection a:visited {
+    color: #3F5278;
+  }
+
+  .tier-selection a:hover {
+    outline: 5px solid #3F5278;
+    border-radius: 10px;
+    padding: 18px 73px;
+  }
+
+  .tier-selection a:focus {
+    outline: 5px solid #3F5278;
+    border-radius: 10px;
+    padding: 18px 73px;
+  }
+
+  h3 {
+    grid-area: 3/1/4/2;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: flex-end;
+    margin: 15px 50px 5px 0;
+  }
+
+  #items {
+    grid-area: 4/1/5/2;
+  }
+
+  #items ul {
+    background-color: #FFF;
+    border-radius: 10px;
+    height: 400px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+  }
+
+  #items li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    background-color: #FFF;
+    margin: 0 12px;
+    border-bottom: 1px solid #C9C9C9;
+  }
+
+  #items img {
+    width: auto;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  #items h4 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 36px;
+  }
+
+  #items p {
+    color: #C9C9C9;
+    justify-content: flex-end;
+    margin: 0 64px 0 auto;
+  }
+
+  #box {
+    grid-area: 4/2/5/3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    outline: 5px solid #FFF;
+    border-radius: 10px;
+  }
+
+  #box ol {
+    list-style-type: none;
+    margin: 10px 70px;
+  }
+
+  #box li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+  }
+
+  #box h4 {
+    font-size: 20px;
+    font-weight: 400;
+    width: 164px;
+  }
+
+  #no-items, #crystal-price, #marishop-price {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 16px 0;
+    width: 200px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #3F5278;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  #box p {
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 16px 83px;
+    color: #C9C9C9;
+  }
+
+  #box a {
+    text-decoration: none;
+    color: #C9C9C9;
+  }
+
+  #box a:visited {
+    color: #C9C9C9;
+  }
+
+  #box a:hover {
+    outline: 5px solid #3F5278;
+    border-radius: 10px;
+  }
+
+  #box a p {
+    margin: 0;
+    padding: 16px 13px;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-style: italic;
+    margin: 30px auto;
+  }

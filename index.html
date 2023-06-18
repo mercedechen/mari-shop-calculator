@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Ark - Mari Shop</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>Mari Shop Calculator</header>
+
+  <div class="container">
+    <div id="crystals">
+      <h1>Price for 95 Crystals</h1>
+      <div class="currency">
+        <input type="number" id="gold-cost" placeholder="Gold" min="0"></input>
+        <img src="img/gold-100x100.png">
+      </div>
+    </div>
+    
+    <div class="tier-selection">
+        <a href="#" onclick="filterList('tier1')">Tier 1</a>
+        <a href="#" onclick="filterList('tier2')">Tier 2</a>
+        <a href="#" onclick="filterList('tier3')">Tier 3</a>
+    </div>
+
+    <h3>Price in Gold</h3>
+
+    <div id="items">
+      <ul>
+        <li class="tier1">
+          <img src="img/harmony-leapstone-83x83.png">
+          <h4>Harmony Leapstone</h4>
+          <p>999</p>
+        </li>
+        <li class="tier1">
+          <img src="img/life-leapstone-83x83.png">
+          <h4>Life Leapstone</h4>
+          <p>999</p>
+        </li>
+        <li class="tier1">
+          <img src="img/honor-leapstone-83x83.png">
+          <h4>Honor Leapstone</h4>
+          <p>999</p>
+        <li class="tier1">
+          <img src="img/great-honor-leapstone-83x83.png">
+          <h4>Great Honor Leapstone</h4>
+          <p>999</p>
+        </li>
+        <li class="tier2">
+          <img src="img/guardian-stone-fragment-83x83.png">
+          <h4>Guardian Stone Fragment</h4>
+          <p>999</p>
+        </li>
+        <li class="tier2">
+          <img src="img/guardian-stone-83x83px.png">
+          <h4>Guardian Stone</h4>
+           <p>999</p>
+        </li>
+        <li class="tier2">
+          <img src="img/guardian-stone-crystal-83x83.png">
+          <h4>Guardian Stone Crystal</h4>
+          <p>999</p>
+        </li>
+        <li class="tier3">
+          <img src="img/destruction-stone-fragment-83x83.png">
+          <h4>Destruction Stone Fragment</h4>
+          <p>999</p>
+        </li>
+        <li class="tier3">
+          <img src="img/destruction-stone-83x83.png">
+          <h4>Destruction Stone</h4>
+          <p>999</p>
+        </li>
+        <li class="tier3">
+          <img src="img/destruction-stone-crystal-83x83.png">
+          <h4>Destruction Stone Crystal</h4>
+          <p>999</p>
+        </li>
+        <li class="tier3">
+          <img src="img/stars-breath-83x83.png">
+          <h4>Star's Breath</h4>
+          <p>999</p>
+        </li>
+        <li class="tier3">
+          <img src="img/moons-breath-83x83.png">
+          <h4>Moon's Breath</h4>
+          <p>999</p>
+        </li>
+        <li class="tier3">
+          <img src="img/solar-breath-83x83.png">
+          <h4>Solar's Breath</h4>
+          <p>999</p>
+        </li>
+      </ul>
+    </div>
+
+    <div id="currency-conversion">
+      <h1>Currency Conversion</h1>
+      <div id="conversion">
+        <div class="currency">
+          <input type="number" id="gold" placeholder="Gold" min="0"></input>
+          <img src="img/gold-100x100.png">
+        </div>
+        <p>=</p>
+        <div class="currency">
+          <input type="number" id="crystals" placeholder="Crystal" min="0"></p>
+          <img src="img/crystals-120x75.png">
+        </div>
+      </div>
+    </div>
+
+    <div id="box">
+      <ol>
+        <li>
+          <h4>No. of Items</h4>
+          <input type="number" id="no-items" placeholder="999" min="0"></input>
+        </li>
+        <li>
+          <h4>Bundle Size in Auction House</h4>
+          <a href="">
+            <p>1</p>
+          </a>
+          <a href="">
+            <p>10</p>
+          </a>
+          <a href="">
+            <p>100</p>
+          </a>
+        </li>
+        <li>
+          <h4>Price in Crystals</h4>
+          <input type="number" id="crystal-price" placeholder="999" min="0"></input>
+        </li>
+        <li>
+          <h4>Price in Mari Shop</h4>
+          <input type="number" id="marishop-price" placeholder="999" min="0"></input>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <footer>Desktop only, work-in-progress. Last updated June 2023.</footer>
+</body>
+</html>
